@@ -26,7 +26,7 @@ public class Main {
 
             //все слова длина которых больше 3 или ровны согласно условии
 
-            if ((wordsArray[i].length() >= 3) && (wordsArray[i].charAt(0) == 'a' )){
+            if ( (wordsArray[i].length() >=3) && ((wordsArray[i].charAt(0) == 'b' ) || (wordsArray[i].charAt(0) == 'a'))) {
                                                     //первая буква charAt слова "a"
                                                     // есть первая "нулевая"!!!ЗАПОМНИТЕ!!
                                                     // charAt берется в одиночных скобах
@@ -35,8 +35,8 @@ public class Main {
 
                 System.out.print(i + ". "); //выводит номер слова
                 System.out.println(wordsArray[i]);// ето выводит слово на каком номере
-            }
-        }
-      }
-    }
+           }
+       }
+   }
+}
 
