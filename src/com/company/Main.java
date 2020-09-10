@@ -19,10 +19,10 @@ public class Main {
         first200 = textTrashFree.substring(0,200);
         System.out.println(first200);
 
-        String [] wordsArray = textTrashFree.split(" ");
+        String [] wordsArray = textTrashFree.split("");
         System.out.println(wordsArray.length);
 
-        for (int i = 0; i <wordsArray.length; i++) {
+        for (int i = 0; i <100; i++) {
 
             //все слова длина которых больше 3 или ровны согласно условии
 
@@ -35,7 +35,9 @@ public class Main {
 
                 System.out.print(i + ". "); //выводит номер слова
                 System.out.println(wordsArray[i]);// ето выводит слово на каком номере
-           }
+           }else {
+                System.out.println(i + "Слово (" + wordsArray[i] + ") не подходит ");
+            }
        }
    }
 }
